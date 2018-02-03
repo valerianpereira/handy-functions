@@ -17,3 +17,16 @@ function r_print($input_array){
 	echo "</pre>";
 	
 }
+
+
+function responseHandler($response, $status = 0) {
+
+        $data['desc']   = $response;
+        if(!empty($status)) {
+            $data['status'] = false;
+            terminate(json_encode($data));
+        }
+        // False !!! We are done here !
+        $data['status'] = true;
+        return json_encode($data);
+    }
