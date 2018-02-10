@@ -18,15 +18,13 @@ function r_print($input_array){
 	
 }
 
-
 function responseHandler($response, $status = 0) {
-
-        $data['desc']   = $response;
-        if(!empty($status)) {
-            $data['status'] = false;
-            terminate(json_encode($data));
-        }
-        // False !!! We are done here !
-        $data['status'] = true;
-        return json_encode($data);
-    }
+	$data['desc']   = $response;
+	if(!empty($status)) {
+	    $data['status'] = false;
+	    terminate(json_encode($data));
+	}
+	// False !!! We are done here !
+	$data['status'] = true;
+	return json_encode($data);
+}
