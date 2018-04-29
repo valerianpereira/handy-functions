@@ -4,16 +4,16 @@
  * Function to print a formatted array tree
  * 
  * Params :
- * $input_array 	array 	Array which is to be printed. Can be single/multi dimensional
+ * $inputArray 	array 	Array which is to be printed. Can be single/multi dimensional
  *
  * Output :
- * @return 			array 	Formatter array.
+ * @return array 	Formatter array.
  *
  */
-function r_print($input_array){
+function rPrint($inputArray){
 
 	echo "<pre>";
-	print_r($input_array);
+	print_r($inputArray);
 	echo "</pre>";
 	
 }
