@@ -28,3 +28,11 @@ function responseHandler($response, $status = 0) {
 	$data['status'] = true;
 	return json_encode($data);
 }
+
+function jsonValidator($data = NULL) {
+  if (!empty($data)) {
+    json_decode($data);
+    return (json_last_error() === JSON_ERROR_NONE);
+  }
+  return false;
+}
