@@ -22,9 +22,6 @@ Holds a range of handy functions which can be re-used wisely
  * 
  * Params :
  * $statusCode 	int 	Status Code for the program to exit with
- *
- * Usage :
- *
- * 		terminate($statusCode);
- *
  */
+ 
+ Usage : terminate($statusCode);
