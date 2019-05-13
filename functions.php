@@ -10,12 +10,10 @@
  * @return array 	Formatter array.
  *
  */
-function rPrint($inputArray){
-
+function rPrint($inputArray) {
 	echo "<pre>";
 	print_r($inputArray);
-	echo "</pre>";
-	
+	echo "</pre>";	
 }
 
 function responseHandler($response, $status = 0) {
